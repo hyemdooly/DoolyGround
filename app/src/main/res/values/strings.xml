@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DoolyGround</string>
+    <string name="title_activity_paging_example">PagingExampleActivity</string>
 </resources>

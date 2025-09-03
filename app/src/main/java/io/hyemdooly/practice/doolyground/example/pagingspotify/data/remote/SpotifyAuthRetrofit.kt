@@ -21,8 +21,7 @@ class SpotifyAuthRetrofit {
         private fun createClient(): OkHttpClient =
             OkHttpClient
                 .Builder()
-                .apply {
-                    addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-                }.build()
+                .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+                .build()
     }
 }
