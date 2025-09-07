@@ -6,8 +6,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import io.hyemdooly.practice.doolyground.example.pagingspotify.data.datasource.AuthDataSource
 import io.hyemdooly.practice.doolyground.example.pagingspotify.data.datasource.AuthDataSourceImpl
-import io.hyemdooly.practice.doolyground.example.pagingspotify.data.repository.AuthRepository
-import io.hyemdooly.practice.doolyground.example.pagingspotify.data.repository.AuthRepositoryImpl
 import javax.inject.Singleton
 
 @Module

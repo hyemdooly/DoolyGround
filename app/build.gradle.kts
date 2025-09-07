@@ -16,7 +16,10 @@ android {
     namespace = "io.hyemdooly.practice.doolyground"
     compileSdk = 35
 
-    buildFeatures { buildConfig = true }
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "io.hyemdooly.practice.doolyground"
@@ -38,13 +41,11 @@ android {
 
     buildTypes {
         release {
-            release {
-                isMinifyEnabled = false
-                proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro",
-                )
-            }
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
         }
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_11
@@ -94,4 +95,10 @@ android {
     kapt {
         correctErrorTypes = true
     }
+}
+dependencies {
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
 }
